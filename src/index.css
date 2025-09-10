@@ -2,41 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* CGPA Calculator Design System - Modern, Colorful, Educational */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors */
+    --background: 240 100% 99%;
+    --foreground: 240 10% 3.9%;
 
+    /* Card and surfaces */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 240 10% 3.9%;
+    --glass: 255 255 255 / 0.1;
+    --glass-border: 255 255 255 / 0.2;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Primary brand colors */
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 262 83% 78%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Educational grade colors */
+    --distinction: 45 93% 58%;
+    --distinction-foreground: 45 93% 8%;
+    --distinction-glow: 45 93% 78%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --first-class: 217 91% 60%;
+    --first-class-foreground: 0 0% 100%;
+    --first-class-glow: 217 91% 80%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --second-class: 0 84% 60%;
+    --second-class-foreground: 0 0% 100%;
+    --second-class-glow: 0 84% 80%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Surface colors */
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 6% 10%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --accent: 240 5% 96%;
+    --accent-foreground: 240 6% 10%;
 
-    --radius: 0.5rem;
+    /* UI colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 262 83% 58%;
+
+    --radius: 1rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(217 91% 60%));
+    --gradient-background: linear-gradient(135deg, hsl(262 100% 95%), hsl(217 100% 95%), hsl(45 100% 95%));
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+
+    /* Shadows and effects */
+    --shadow-glass: 0 8px 32px rgba(31, 38, 135, 0.37);
+    --shadow-glow: 0 4px 20px hsl(var(--primary) / 0.4);
+    --shadow-distinction: 0 4px 20px hsl(var(--distinction) / 0.4);
+    --shadow-first-class: 0 4px 20px hsl(var(--first-class) / 0.4);
+    --shadow-second-class: 0 4px 20px hsl(var(--second-class) / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
